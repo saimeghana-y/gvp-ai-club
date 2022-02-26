@@ -1,6 +1,10 @@
-import { Typography } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
+import React from 'react'
+import Team from "../component/Teamcard.js"
 
-function Team() {
-  return <Typography>Team page</Typography>;
+function team() {
+  return (
+<Team />
+  );
 }
-export default Team;
+export default team;
