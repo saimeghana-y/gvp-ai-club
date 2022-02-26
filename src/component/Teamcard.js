@@ -5,26 +5,27 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import './team.css'
 
-function Team() {
+function Team(props) {
   return (
   <Box style={{backgroundColor:"#161623"}}>
     <div className="container">
       <div className="card">
         <div class="content">
-          <div class="imgBx"> <img src="do_epic_shit.png"/></div>
+          <div class="imgBx"> <img src={props.img}/></div>
           <div class="contentBx">
-            <h3>Do Epic Shit</h3>
+            <h3>{props.title}</h3>
+            <p>{props.desc}</p>
           </div>
         </div>
         <ul class="sci">
         <li>
-          <a href="instagram.com"><InstagramIcon/></a>
+          <a href={props.inst}><InstagramIcon/></a>
         </li>
         <li>
-          <a href="facebook.com"><FacebookIcon/></a>
+          <a href={props.fac}><FacebookIcon/></a>
         </li>
         <li>
-          <a href="twitter.com"><TwitterIcon/></a>
+          <a href={props.twt}><TwitterIcon/></a>
         </li>
       </ul>
       </div>
