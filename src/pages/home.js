@@ -65,6 +65,9 @@ function About() {
             <img src={leftPlanet} className="moveDown remove"></img>
             </Grid>
 
+
+            
+
             <Grid item xs={6} container className={classes.gridCenter}>
             <img src={rightPlanet} className="moveUp remove"></img>
             <img src={logoGDSC} className="zoom-in-out-box paddLeft moveMobile" ></img>
@@ -72,6 +75,10 @@ function About() {
           </Grid>
 
         </Grid>
+
+
+
+
 
         <Grid item container xs={12} lg={6}md={6} className={classes.gridLeft}>
         
@@ -87,6 +94,14 @@ function About() {
         </Grid>
       </Grid>
       <img src={fieldHeading} className="fields-heading"></img>
+
+
+
+
+
+
+
+
       <Grid container spacing={1}>
            <Grid item xs={12} lg={6}md={6} container className={classes.gridCenter}>
             <Typography  className={classes.lefttext}>We are a  passionate group of people who work towards 
