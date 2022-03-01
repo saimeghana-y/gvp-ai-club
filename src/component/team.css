@@ -51,7 +51,7 @@
     height: 150px;
     border-radius: 50%; 
     overflow: hidden;
-    border: 10px solid rgba(0,0,0,0.25);
+    border: 10px solid #08022A;
 }
 
 .container .card .content .imgBx img{
