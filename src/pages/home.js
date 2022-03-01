@@ -1,4 +1,4 @@
-import { Typography,Box,Toolbar,makeStyles,Slide, createTheme, Grid,Zoom  } from "@material-ui/core";
+import { Typography,Box,Toobar,makeStyles,Slide, createTheme, Grid,Zoom  } from "@material-ui/core";
 import logoAI from "../images/ai club logo.png"
 import logoGDSC from "../images/gdsc logo.png"
 import leftPlanet from "../images/left planet.png"
