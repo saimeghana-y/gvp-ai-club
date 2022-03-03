@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme)=>({
   },
 }));
 
-function About() {
+function Home() {
   const classes = useStyles();
   return (
     <Box style={ {backgroundColor:"#08022A"}}>
@@ -363,22 +363,14 @@ function About() {
             </Grid>
 
             <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center",}}>
-                <NavLink activeStyle={{ color:'white' }} to="/about" className={classes.link}>
-                  ABOUT
+                <NavLink activeStyle={{ color:'white' }} to="/events" className={classes.link}>
+                  EVENTS
                 </NavLink>
             </Grid>
 
-
             <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center", color:"#817C9D"}}>
-                <NavLink activeStyle={{ color:'white' }} to="/contact" className={classes.link}>
-                  CONTACT
-                </NavLink>
-            </Grid>
-
-
-            <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center", color:"#817C9D"}}>
-                <NavLink activeStyle={{ color:'white' }} to="/faq" className={classes.link}>
-                  FAQ
+                <NavLink activeStyle={{ color:'white' }} to="/community" className={classes.link}>
+                  COMMUNITY
                 </NavLink>
             </Grid>
 
@@ -422,4 +414,4 @@ function About() {
     </Box>
   );
 }
-export default About;
+export default Home;
