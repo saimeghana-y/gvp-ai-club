@@ -54,14 +54,11 @@ function Navbar() {
             <NavLink to="/" className={classes.link}>
               HOME
             </NavLink>
-            <NavLink activeStyle={{ color:'white' }} to="/about" className={classes.link}>
-              ABOUT
+            <NavLink activeStyle={{ color:'white' }} to="/events" className={classes.link}>
+              EVENTS
             </NavLink>
-            <NavLink activeStyle={{ color:'white' }} to="/contact" className={classes.link}>
-              CONTACT
-            </NavLink>
-            <NavLink activeStyle={{ color:'white' }} to="/faq" className={classes.link}>
-              FAQ
+            <NavLink activeStyle={{ color:'white' }} to="/community" className={classes.link}>
+            COMMUNITY
             </NavLink>
             <NavLink activeStyle={{ color:'white' }} to="/team" className={classes.link}>
               TEAM
