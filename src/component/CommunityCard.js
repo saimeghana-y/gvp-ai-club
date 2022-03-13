@@ -7,13 +7,13 @@ function Card() {
   return (
     <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center"}} >
     <a href="http://www.google.com">
-    <div className="containero">
-      <div className="cardo">
-      <div class="contento">
-            <div class="imgBxo">
+    <div className="container-c">
+      <div className="card-c">
+      <div class="content-c">
+            <div class="imgBx-c">
               <img src={instagram} />
             </div>
-            <div class="contentBxo">
+            <div class="contentBx-c">
             <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
             </div>
           </div>

@@ -1,4 +1,4 @@
-.containero
+.container-c
 {
     position: relative;
     display: flex;
@@ -9,7 +9,7 @@
     margin: 40px 0;
 }
 
-.containero .cardo
+.container-c .card-c
 {
     position: relative;
     width: 200px;
@@ -25,7 +25,7 @@
     color: rgba(255,255,255,0.8);
 }
 
-.containero .cardo .contento{
+.container-c .card-c .content-c{
 
     position: relative; 
     display: flex; 
@@ -36,18 +36,18 @@
     cursor: pointer;
 }
 
-.containero .cardo:hover .contento{
+.container-c .card-c:hover .content-c{
     opacity: 1;
     transform: translateY(-20px);
 }
 
-.containero .cardo .contento .imgOuto {
+.container-c .card-c .content-c .imgOut-c {
     position: relative; 
     width: 300px;
     height: 180px;
 }
 
-.containero .cardo .contento .imgOuto img{
+.container-c .card-c .content-c .imgOut-c img{
     position: absolute;
     top: 0;
     Left: 0;
@@ -58,12 +58,12 @@
 }
 
 
-.containero .cardo .contento .contentBxo{
+.container-c .card-c .content-c .contentBx-c{
     padding: 20px;
     padding-top: 100px;
     text-align: center; 
 }
-.containero .cardo .contento .contentBxo  h3{
+.container-c .card-c .content-c .contentBx-c  h3{
 
     margin-top: 90px;
     color:#fff;
@@ -73,7 +73,7 @@
 }
 
 
-.containero .cardo .contento .imgBxo {
+.container-c .card-c .content-c .imgBx-c {
     position: relative; 
     width: 150px;
     height: 150px;
@@ -81,7 +81,7 @@
     overflow: hidden;
 }
 
-.containero .cardo .contento .imgBxo img{
+.container-c .card-c .content-c .imgBx-c img{
     position: absolute;
     top: 0;
     Left: 0;

@@ -5,36 +5,15 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import './team.css'
 
-
-const useStyles = makeStyles((theme)=>({
-  gridRight:{
-    justifyContent:"right",
-    marginTop:30,
-    paddingTop:0
-  },
-  gridCenter:{
-    marginTop:30,
-    justifyContent:"center",
-  },
-  gridLeft:{
-    marginTop:30,
-    justifyContent:"left"
-  }
-
-}));
-
 function Team(props) {
-  const checked=true;
-  const classes = useStyles();
   return (
-  <Box style={{backgroundColor:"#08022A"}}>
-  <Grid item container lg={5} xs={12}  md={4} className={classes.gridCenter}>
-    <div className="container">
-      <div className="card">
-        <div class="content">
+  <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center"}} >
+    <div className="containert">
+      <div className="cardt">
+        <div class="contentt">
           <p>{props.key}</p>
-          <div class="imgBx"> <img src={props.img}/></div>
-          <div class="contentBx">
+          <div class="imgBxt"> <img src={props.img}/></div>
+          <div class="contentBxt">
             <h3>{props.title}</h3>
             <p>{props.desc}</p>
           </div>
@@ -53,7 +32,6 @@ function Team(props) {
       </div>
     </div>
     </Grid>
-  </Box>
   );
 }
 export default Team;

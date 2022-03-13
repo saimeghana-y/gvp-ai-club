@@ -1,4 +1,4 @@
-.container
+.containert
 {
     position: relative;
     z-index: 1;
@@ -7,12 +7,10 @@
     align-items: center;
     background: #08022A;
     flex-wrap: wrap;
-    margin:  0;
-    padding:150px;
-    margin-left: 150px;
+    margin:  40px 0;
 }
 
-.container .card
+.containert .cardt
 {
     position: relative;
     width: 300px;
@@ -29,7 +27,7 @@
     color: rgba(255,255,255,0.8);
 }
 
-.container .card .content{
+.containert .cardt .contentt{
 
     position: relative; 
     display: flex; 
@@ -40,12 +38,12 @@
     transition: 0.5s;
 }
 
-.container .card:hover .content{
+.containert .cardt:hover .contentt{
     opacity: 1;
     transform: translateY(-20px);
 }
 
-.container .card .content .imgBx {
+.containert .cardt .contentt .imgBxt {
     position: relative; 
     width: 150px;
     height: 150px;
@@ -54,7 +52,7 @@
     border: 10px solid #08022A;
 }
 
-.container .card .content .imgBx img{
+.containert .cardt .contentt .imgBxt img{
     position: absolute;
     top: 0;
     Left: 0;
@@ -63,7 +61,7 @@
     object-fit: cover;
 }
 
-.container .card .content .contentBx  h3{
+.containert .cardt .contentt .contentBxt  h3{
     color:#fff;
     text-transform: uppercase;
     Letter-spacing: 2px;
@@ -74,22 +72,23 @@
     line-height: 1.1em;
 }
 
-.container .card .content .contentBx h3 span {
+.containert .cardt .contentt .contentBxt h3 span {
 
     font-size: 12px;
     font-weight: 300; 
     text-transform: initial;
 }
 
-.container .card .sci{
+.containert .cardt .sci{
     align-items: center;
     position: absolute;
     bottom: 50px; 
     display: flex;
-    
+    top: 320px;
+    left: 45px;
 }
 
-.container .card .sci  li{
+.containert .cardt .sci  li{
     List-style: none;
     margin: 0 10px;
     transform: translateY(40px);
@@ -98,22 +97,22 @@
     transition-delay: calc(0.1s * var(--i));
 }
 
-.container .card:hover .sci li{
+.containert .cardt:hover .sci li{
     transform: translateY(0px);
     opacity: 1;
 }
 
-.container .card .sci li a{
+.containert .cardt .sci li a{
 
     color: #fff; 
     font-size: 24px;
 }
 
 @media (max-width:629px) {
-    .container .card {
+    .containert .card {
         margin-left: 30px;
     }
-    .container .card .sci  li{
+    .containert .card .sci  li{
         opacity: 1;
     }
 }
