@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Events from "./pages/events";
 import Community from "./pages/community";
 import Team from "./pages/team";
+import Footer from "./component/Footer";
 function App() {
   return (
     <Router>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/community" component={Community} />
         <Route path="/team" component={Team} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

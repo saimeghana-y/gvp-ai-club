@@ -14,8 +14,8 @@ import Drawer from "./Drawer";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(5),
-    display: "flex",
+    marginLeft: theme.spacing(22),
+    paddingTop: 30
   },
   logo: {
     flexGrow: "1",
