@@ -17,15 +17,15 @@ function createCard(data){
 }
 
 
-function Teamm() {
+function Events() {
   return (
     <Box style={ {backgroundColor:"#08022A"}}>
 
-      <Grid container spacing={1} >
+      <Grid container spacing={0} style={{paddingTop:50}}>
         {data.map(createCard)}
       </Grid>
     </Box>
       
   );
 }
-export default Teamm;
+export default Events;

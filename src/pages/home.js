@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Typography,Box,makeStyles, Grid, Button  } from "@material-ui/core";
 import logoAI from "../images/ai club logo.png"
 import logoGDSC from "../images/gdsc logo.png"
@@ -17,7 +17,6 @@ import statsAir from "../images/stats in air.png"
 import twoComp from "../images/two girls comp.png"
 import twoStats from "../images/two people stats.png"
 import './home.css'
-import './footerIcons.scss'
 
 
 const useStyles = makeStyles((theme)=>({
@@ -286,18 +285,12 @@ function Home() {
       </Grid>
 
 
-      <Grid container spacing={1}>
-                <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center",}} >
+      <Grid container >
+                
                 <Event/>
-                </Grid>
-
-                <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center",}} >
                 <Event/>
-                </Grid>
-
-                <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center",}} >
                 <Event/>
-                </Grid>
+                
       </Grid>
       
 
@@ -334,82 +327,11 @@ function Home() {
             </Grid>
 </Grid>
 
-<Grid container spacing={1} style={{justifyContent:"center", marginBottom:"50px"}}>
+<Grid container spacing={1} style={{justifyContent:"center", paddingBottom:"50px"}}>
       <div class="glass-toolbar">
           <Button class="glass-button" component={Link} to="/team" >Meet the team</Button>
       </div>
 </Grid>
-
-
-{/* // ----- Footer ----- */}
-
-
-      <Grid container spacing={1} style={{backgroundColor:"black"}}>
-
-
-{/* // -- quick links -- */}
-
-
-        <Grid item xs={12} lg={12}md={12} container style={{justifyContent:"center", color:"#817C9D", marginTop:"30px"}}>
-            <Typography variant="h4" className={classes.footerHeading}>Quick Links</Typography>
-        </Grid>
-
-        <Grid container spacing={1}>
-            <div className={classes.navlinks}>
-            <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center",}}>
-                <NavLink to="/" className={classes.link}>
-                  HOME
-                </NavLink>
-            </Grid>
-
-            <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center",}}>
-                <NavLink activeStyle={{ color:'white' }} to="/events" className={classes.link}>
-                  EVENTS
-                </NavLink>
-            </Grid>
-
-            <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center", color:"#817C9D"}}>
-                <NavLink activeStyle={{ color:'white' }} to="/community" className={classes.link}>
-                  COMMUNITY
-                </NavLink>
-            </Grid>
-
-
-            <Grid item xs={12} lg={3}md={4} container style={{justifyContent:"center", color:"#817C9D"}}>
-                <NavLink activeStyle={{ color:'white' }} to="/team" className={classes.link}>
-                  TEAM
-                </NavLink> 
-            </Grid>
-              
-              </div>
-        </Grid>
-{/* // -- socials -- */}
-
-
-          <Grid item xs={12} lg={12}md={12} container style={{justifyContent:"center", color:"#817C9D"}}>
-                <Typography variant="h4" className={classes.footerHeading}>Socials</Typography>
-          </Grid>
-
-        
-           <Grid item xs={12} lg={12}md={12} container style={{justifyContent:"center", paddingTop:"30px"}}>
-
-              <ul class="social-networks spin-icon">
-                <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
-                <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
-                <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
-                <li><a href="https://github.com" class="icon-github">GitHub</a></li>
-                <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
-              </ul>
-
-            </Grid>
-
-          <Grid item xs={12} lg={12}md={12} container style={{justifyContent:"center", color:"#817C9D"}}>
-            <Typography component="p" style={{marginBottom:"30px"}}>
-              @2022 All right reserved
-            </Typography>
-          </Grid>
-      </Grid>
-    
 
     </Box>
   );

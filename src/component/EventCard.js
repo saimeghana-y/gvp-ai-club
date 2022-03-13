@@ -1,16 +1,16 @@
-import { Box, Typography } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import React from 'react'
 import './eventCard.css'
 
-function Team() {
+function Event() {
   return (
-  <Box>
+    <Grid item container xs={12} lg={4}md={4} style={{justifyContent:"center"}} >
     <a href="http://www.google.com">
-    <div className="container">
-      <div className="card">
-        <div class="content">
-          <div class="imgOut"> <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/InfoSession_sVkBcQw.png"/></div>
-          <div class="contentBx">
+    <div className="containero">
+      <div className="cardo">
+        <div class="contento">
+          <div class="imgOuto"> <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_center,h_175,q_auto:good,w_175/v1/gcs/platform-data-dsc/events/InfoSession_sVkBcQw.png"/></div>
+          <div class="contentBxo">
             <h3>Do Epic Shit</h3>
             <h4>4 Dec 2021 - 5 Dec 2021</h4>
             <p>We are a  passionate group of people who work towards 
@@ -22,7 +22,7 @@ function Team() {
       </div>
     </div>
     </a>
-  </Box>
+                </Grid>
   );
 }
-export default Team;
+export default Event;
