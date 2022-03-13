@@ -1,89 +1,31 @@
-import React from "react";
-import { Box, Typography, Grid, makeStyles } from "@material-ui/core";
-import './Community.css';
-import instagram from "../images/instagram.png"
+import { Box,Grid } from "@material-ui/core";
+import React from 'react'
+import Card from "../component/CommunityCard"
+import data from "../component/Teamdata.js"
 
-
-
-function Community() {
-  return (
-    <Box>
-      {/* <Grid item container lg={4} xs={12}  md={8}> */}
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="card">
-          <div class="content">
-            <div class="imgBx">
-              <img src={instagram} />
-            </div>
-            <div class="contentBx">
-            <a href="https://www.instagram.com/?hl=en"><h3>Instagram</h3></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* </Grid> */}
-    </Box>
+function createCard(data){
+  return ( <Card
+               key={data.id}
+               img={data.img}
+               title={data.title}
+               desc={data.desc}
+               inst={data.inst}
+               fac={data.fac}
+               twt={data.twt}
+           />
   );
 }
 
-export default Community;
+
+function Events() {
+  return (
+    <Box style={ {backgroundColor:"#08022A"}}>
+
+      <Grid container spacing={0} style={{paddingTop:50}}>
+        {data.map(createCard)}
+      </Grid>
+    </Box>
+      
+  );
+}
+export default Events;
