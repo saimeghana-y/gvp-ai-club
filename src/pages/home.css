@@ -138,14 +138,15 @@ img.vert-move {
     display: none;
   }
   img.field-image{
-    padding-left: -100px;
-    margin-left: -100px;
+    padding-left: -200px;
+    margin-left: -30px;
   }
   img.field-reveal-image{
     display: block;
     padding-left: -100px;
     margin-left: -100px;
   }
+  
 }
 
 /* footer icons */

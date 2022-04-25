@@ -1,7 +1,7 @@
 import { Box,Grid } from "@material-ui/core";
 import React from 'react'
 import Card from "../component/CommunityCard"
-import data from "../component/Teamdata.js"
+import data from "../component/Communitydata"
 
 function createCard(data){
   return ( <Card
@@ -10,7 +10,7 @@ function createCard(data){
                title={data.title}
                desc={data.desc}
                inst={data.inst}
-               fac={data.fac}
+               link={data.link}
                twt={data.twt}
            />
   );
