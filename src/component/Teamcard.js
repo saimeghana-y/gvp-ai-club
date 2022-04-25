@@ -3,6 +3,8 @@ import React from 'react'
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHub from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './team.css'
 
 function Team(props) {
@@ -20,10 +22,10 @@ function Team(props) {
         </div>
         <ul class="sci">
         <li>
-          <a href={props.inst}><InstagramIcon/></a>
+          <a href={props.git}><GitHub/></a>
         </li>
         <li>
-          <a href={props.fac}><FacebookIcon/></a>
+          <a href={props.link}><LinkedInIcon/></a>
         </li>
         <li>
           <a href={props.twt}><TwitterIcon/></a>

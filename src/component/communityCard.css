@@ -11,7 +11,7 @@
 
 .container-c .card-c
 {
-    position: relative;
+    /* position: relative;
     width: 200px;
     height: 400px;
     background: rgba(255, 255, 255, 0.05);
@@ -22,7 +22,7 @@
     background-color: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(30px);
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.8); */
 }
 
 .container-c .card-c .content-c{
@@ -42,9 +42,9 @@
 }
 
 .container-c .card-c .content-c .imgOut-c {
-    position: relative; 
+    /* position: relative; 
     width: 300px;
-    height: 180px;
+    height: 180px; */
 }
 
 .container-c .card-c .content-c .imgOut-c img{
@@ -60,15 +60,16 @@
 
 .container-c .card-c .content-c .contentBx-c{
     padding: 20px;
-    padding-top: 100px;
     text-align: center; 
 }
 .container-c .card-c .content-c .contentBx-c  h3{
-
-    margin-top: 90px;
     color:#fff;
-    font-weight: bold;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    font-weight: 500;
     font-size: 18px;
+    text-align: center; 
+    margin: 20px 0 10px;
     line-height: 1.1em;
 }
 

@@ -1,7 +1,7 @@
 import { Box,Grid } from "@material-ui/core";
 import React from 'react'
 import Event from "../component/EventCard"
-import data from "../component/Teamdata.js"
+import data from "../component/Eventdata"
 
 function createCard(data){
   return ( <Event
@@ -9,9 +9,7 @@ function createCard(data){
                img={data.img}
                title={data.title}
                desc={data.desc}
-               inst={data.inst}
-               fac={data.fac}
-               twt={data.twt}
+               time={data.time}
            />
   );
 }

@@ -9,8 +9,8 @@ function createCard(data){
                img={data.img}
                title={data.title}
                desc={data.desc}
-               inst={data.inst}
-               fac={data.fac}
+               git={data.git}
+               link={data.link}
                twt={data.twt}
            />
   );
