@@ -146,6 +146,12 @@ img.vert-move {
     padding-left: -100px;
     margin-left: -100px;
   }
+  div.move{
+    margin-left: -20px;
+  }
+  div.movefirst{
+    margin-left: 65px;
+  }
   
 }
 

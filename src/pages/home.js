@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   return (
-    <Box style={{ backgroundColor: "#08022A", paddingRight:""}}>
+    <Box style={{ backgroundColor: "#08022A"}}>
       <Grid container spacing={1}>
         <Grid item xs={12} lg={6} md={6} className="padBack">
 
@@ -172,7 +172,7 @@ function Home() {
             We want to create a healthy environment for the budding developers
             to create solutions for real life problems and promote the "developers"
             culture.</Typography>
-          <div class="glass-toolbar">
+          <div class="glass-toolbar movefirst">
             <Button class="glass-button" component={Link} to="/events" >RSVP to Events</Button>
           </div>
         </Grid>
@@ -217,7 +217,7 @@ function Home() {
 
 
       <Grid container spacing={1} style={{ justifyContent: "center" }}>
-        <div class="glass-toolbar">
+        <div class="glass-toolbar move">
           <Button class="glass-button" component={Link} to="/events" >More Events</Button>
         </div>
       </Grid>
@@ -247,7 +247,7 @@ function Home() {
       </Grid>
 
       <Grid container spacing={1} style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <div class="glass-toolbar">
+        <div class="glass-toolbar move">
           <Button class="glass-button" component={Link} to="/team" >Meet the team</Button>
         </div>
       </Grid>
