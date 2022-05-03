@@ -1,7 +1,5 @@
-import { Box, Grid, Typography,makeStyles } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import React from 'react'
-import InstagramIcon from '@material-ui/icons/Instagram';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHub from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
