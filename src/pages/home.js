@@ -139,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
   return (
-    <Box style={{ backgroundColor: "#08022A" }}>
+    <Box style={{ backgroundColor: "#08022A", paddingRight:""}}>
       <Grid container spacing={1}>
         <Grid item xs={12} lg={6} md={6} className="padBack">
 

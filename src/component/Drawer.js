@@ -21,19 +21,22 @@ const useStyles = makeStyles(()=>({
     icon:{
         color: "white"
     }
+    
 }));
 
 function DrawerComponent() {
     const classes = useStyles();
+    
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <div  style={{ backgroundColor: "#08022A" }}>
       <Drawer
+      
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         
       >
-        <List style={{ backgroundColor: "#08022A" }}>
+        <List style={{ backgroundColor: "#08022A", height:"100%"}}>
         <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/" className={classes.link}>Home</Link>
