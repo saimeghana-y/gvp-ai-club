@@ -150,3 +150,6 @@ img.vert-move {
 }
 
 /* footer icons */
+::-webkit-scrollbar {
+  display: none;
+}
