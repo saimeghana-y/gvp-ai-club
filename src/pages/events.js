@@ -5,11 +5,11 @@ import data from "../component/Eventdata"
 
 function createCard(data){
   return ( <Event
-               key={data.id}
                img={data.img}
                title={data.title}
                desc={data.desc}
                time={data.time}
+               link={data.link}
            />
   );
 }
